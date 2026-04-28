@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Calculator Pro</title>
+    <link rel="stylesheet" href="stlyle.css">
+</head>
+<body>
+    <!-- 🚀 START SCREEN -->
+    <div class="start-screen" id="startScreen">
+        <div class="logo"></div>
+        <div class="title">Calculator Pro</div>
+        <div class="subtitle">Scientific Calculator Pro</div>
+        <button class="start-btn" onclick="startCalculator()">START</button>
+        
+        <!-- ✅ CREATED BY 3D BOX ME -->
+        <div class="creator-box">
+            <div class="creator">Created by MD AFZAL</div>
+        </div>
+        
+        <!-- 📋 MENU BOX -->
+        <div class="menu-box">
+            <div class="menu-grid">
+                <button class="menu-btn" onclick="showModal('about')">About</button>
+                <button class="menu-btn" onclick="showModal('tips')">Tips</button>
+                <button class="menu-btn" onclick="showModal('faq')">FAQ</button>
+                <button class="menu-btn" onclick="showModal('contact')">Contact</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 📱 MODALS -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header" id="modalHeader"></div>
+            <div class="modal-body" id="modalBody"></div>
+            <button class="close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- 🧮 CALCULATOR -->
+    <div class="calculator" id="calculator">
+        <div class="screen">
+            <div class="display" id="display">0</div>
+        </div>
+
+        <div class="buttons">
+            <!-- Row 1: ON C, CE, GT, (, M+ -->
+            <button class="btn-orange" onclick="clearAll()">ON<br>C</button>
+            <button class="btn-pink" onclick="clearEntry()">CE</button>
+            <button class="btn-pink" onclick="grandTotal()">GT</button>
+            <button class="btn-scientific" onclick="append('(')">(</button>
+            <button class="btn-scientific" onclick="memoryAdd()">M+</button>
+
+            <!-- Row 2: M-, MR, sin, ), cos -->
+            <button class="btn-scientific" onclick="memorySubtract()">M-</button>
+            <button class="btn-scientific" onclick="memoryRecall()">MR</button>
+            <button class="btn-scientific" onclick="addFunc('sin(')">sin</button>
+            <button class="btn-scientific" onclick="append(')')">)</button>
+            <button class="btn-scientific" onclick="addFunc('cos(')">cos</button>
+
+            <!-- Row 3: tan, log, √, x^y, π -->
+            <button class="btn-scientific" onclick="addFunc('tan(')">tan</button>
+            <button class="btn-scientific" onclick="addFunc('log(')">log</button>
+            <button class="btn-scientific" onclick="addFunc('√(')">√</button>
+            <button class="btn-scientific" onclick="append('**')">x^y</button>
+            <button class="btn-scientific" onclick="append('3.14159')">π</button>
+            
+            <!-- Row 4: 7, 8, 9, ÷, 4 -->
+            <button class="btn-yellow" onclick="append('7')">7</button>
+            <button class="btn-yellow" onclick="append('8')">8</button>
+            <button class="btn-yellow" onclick="append('9')">9</button>
+            <button class="btn-lyellow" onclick="append('/')">÷</button>
+            <button class="btn-green" onclick="append('4')">4</button>
+            
+            <!-- Row 5: 5, 6, ×, +, 1 -->
+            <button class="btn-green" onclick="append('5')">5</button>
+            <button class="btn-green" onclick="append('6')">6</button>
+            <button class="btn-lgreen" onclick="append('*')">×</button>
+            <button class="btn-lgreen" onclick="append('+')">+</button>
+            <button class="btn-purple" onclick="append('1')">1</button>
+            
+            <!-- Row 6: 2, 3, −, =, 0 -->
+            <button class="btn-purple" onclick="append('2')">2</button>
+            <button class="btn-purple" onclick="append('3')">3</button>
+            <button class="btn-lpurple" onclick="append('-')">−</button>
+            <button class="btn-lpurple" onclick="calculate()">=</button>
+            <button class="btn-blue" onclick="append('0')">0</button>
+            
+            <!-- Row 7: ., 00, 000, %, ← HOME -->
+            <button class="btn-blue" onclick="append('.')">.</button>
+            <button class="btn-blue" onclick="append('00')">00</button>
+            <button class="btn-blue" onclick="append('000')">000</button>
+            <button class="btn-blue" onclick="percent()">%</button>
+            <button class="btn-home" onclick="goHome()">GO TO HOME</button>
+        </div>
+    </div>
+ <script src="script.js"></script>
+   
+</body>
+</html>
