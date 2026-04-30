@@ -17,7 +17,57 @@
             padding: 20px;
             font-family: 'Segoe UI', Arial, sans-serif;
         }
-        
+/* .btn-plus2 {
+    background: radial-gradient(circle at 30% 30%, #c9ceca, #c9ceca, #c9ceca);
+    color: black;
+    box-shadow: 0 9px 0 #888988;
+    transition: all 0.2s ease; 
+   
+} */
+
+/* .btn-plus {
+    background: radial-gradient(circle at 30% 30%, #29d262, #27d63e, #3adf2e);
+    color: black;
+    box-shadow: 0 9px 0 #259d45;
+    transition: all 0.2s ease;
+} */
+
+/* .btn-plus1 {
+    background: radial-gradient(circle at 30% 30%, #29d262, #27d63e, #3adf2e);
+    color: black;
+    box-shadow: 0 9px 0 #259d45;
+    transition: all 0.2s ease;
+} */
+.btn-plus2 {
+            background: radial-gradient(circle at 30% 30%,#c9ceca, #c9ceca, #c9ceca);
+            color: #000000;
+            box-shadow: 0 9px 0 #909290,
+                        0 11px 22px rgba(67, 16, 118, 0.5),
+                        inset 0 3px 0 rgb(255, 255, 255),
+                        inset 0 -3px 0 rgba(0,0,0,0.15);
+            font-size: 24px;
+        }
+
+.btn-plus {
+            background: radial-gradient(circle at 30% 30%, #29d262, #27d63e, #3adf2e);
+            color: #000000;
+            box-shadow: 0 9px 0 #259d45,
+                        0 11px 22px rgba(67, 16, 118, 0.5),
+                        inset 0 3px 0 rgba(255,255,255,0.6),
+                        inset 0 -3px 0 rgba(0,0,0,0.15);
+            font-size: 24px;
+        }
+
+.btn-plus1 {
+            background: radial-gradient(circle at 30% 30%, #29d262, #27d63e, #3adf2e);
+            color: #000000;
+            box-shadow: 0 9px 0 #259d45,
+                        0 11px 22px rgba(67, 16, 118, 0.5),
+                        inset 0 3px 0 rgba(255,255,255,0.6),
+                        inset 0 -3px 0 rgba(0,0,0,0.15);
+            font-size: 24px;
+        }
+
         /* ===== START PAGE ===== */
         .start-screen {
             background: linear-gradient(145deg, rgba(212,241,249,0.95) 0%, rgba(184,230,240,0.95) 50%, rgba(165,221,232,0.95) 100%);
@@ -149,16 +199,16 @@
 /* ✅ CREATED BY - 3D BOX ME - THODA NICHE */
 /* ✅ CREATED BY MD AFZAL - WHITE BOX + HILNE WALA */
 .creator-box {
-    background: linear-gradient(145deg, #ffffff, #f8f8f8);
+    background: linear-gradient(145deg, #2e5e9c, #1e5091);
     border-radius: 25px;
     padding: 12px 35px;
     margin-bottom: 30px;
     margin-top: 5px;
-    box-shadow: 0 6px 0 #e0e0e0,
+    box-shadow: 0 6px 0 #000000,
                 0 8px 20px rgba(0,0,0,0.15),
                 inset 0 2px 0 rgba(255,255,255,1),
                 inset 0 -2px 0 rgba(0,0,0,0.05);
-    border: 2px solid #f0f0f0;
+    border: 2px solid #060101;
     display: inline-block;
     animation: shake 3s ease-in-out infinite; /* ← YE LINE ADD KI */
 }
@@ -189,7 +239,7 @@
 }
         .creator {
             font-size: 14px;
-            color: #255089;
+            color: #ffffff;
             font-weight: 900;
             font-family: 'Orbitron', monospace;
             letter-spacing: 1.5px;
@@ -287,7 +337,7 @@
         }
         .close-btn {
             background: radial-gradient(circle at 30% 30%, #ff6b7a, #ff4757);
-            color: #fff;
+            color: #000000;
             border: none;
             padding: 12px 40px;
             border-radius: 25px;
@@ -388,7 +438,7 @@
         }
         .btn-orange {
             background: radial-gradient(circle at 30% 30%, #ffb380, #ff9966, #ff7733);
-            color: #fff;
+            color: #000000;
             box-shadow: 0 9px 0 #cc5522,
                         0 11px 22px rgba(255,119,51,0.6),
                         inset 0 3px 0 rgba(255,255,255,0.5),
@@ -402,7 +452,7 @@
         }
         .btn-pink {
             background: radial-gradient(circle at 30% 30%, #ffd4e5, #ffb3d9, #ff99cc);
-            color: #333;
+            color: #000000;
             box-shadow: 0 9px 0 #cc6699,
                         0 11px 22px rgba(255,153,204,0.5),
                         inset 0 3px 0 rgba(255,255,255,0.6),
@@ -415,7 +465,7 @@
         }
         .btn-scientific {
             background: radial-gradient(circle at 30% 30%, #7db8ff, #5a9de8, #3d7bc9);
-            color: #fff;
+            color: #000000;
             box-shadow: 0 9px 0 #255089,
                         0 11px 22px rgba(90,157,232,0.5),
                         inset 0 3px 0 rgba(255,255,255,0.5),
@@ -428,7 +478,7 @@
         }
         .btn-yellow {
             background: radial-gradient(circle at 30% 30%, #ffeb99, #ffe066, #ffcc33);
-            color: #333;
+            color: #000000;
             box-shadow: 0 9px 0 #ccaa22,
                         0 11px 22px rgba(255,204,51,0.5),
                         inset 0 3px 0 rgba(255,255,255,0.6),
@@ -440,7 +490,7 @@
         }
         .btn-lyellow {
             background: radial-gradient(circle at 30% 30%, #fff5cc, #ffeb99, #ffe066);
-            color: #333;
+            color: #000000;
             box-shadow: 0 9px 0 #ccb855,
                         0 11px 22px rgba(255,224,102,0.5),
                         inset 0 3px 0 rgba(255,255,255,0.6),
@@ -453,8 +503,8 @@
         }
         .btn-green {
             background: radial-gradient(circle at 30% 30%, #b3ffb3, #99ff99, #66cc66);
-            color: #333;
-            box-shadow: 0 9px 0 #449944,
+            color: #000000;
+            box-shadow: 0 9px 0 #3dbf3d,
                         0 11px 22px rgba(102,204,102,0.5),
                         inset 0 3px 0 rgba(255,255,255,0.6),
                         inset 0 -3px 0 rgba(0,0,0,0.15);
@@ -464,8 +514,8 @@
                         0 4px 10px rgba(102,204,102,0.5);
         }
         .btn-lgreen {
-            background: radial-gradient(circle at 30% 30%, #ccffcc, #b3ffb3, #99ff99);
-            color: #333;
+            background: radial-gradient(circle at 30% 30%, #0c6c0c, #289228, #0d740d);
+            color: #000000;
             box-shadow: 0 9px 0 #66cc66,
                         0 11px 22px rgba(153,255,153,0.5),
                         inset 0 3px 0 rgba(255,255,255,0.6),
@@ -478,8 +528,8 @@
         }
         .btn-purple {
             background: radial-gradient(circle at 30% 30%, #e6ccff, #d9b3ff, #cc99ff);
-            color: #333;
-            box-shadow: 0 9px 0 #9966cc,
+            color: #000000;
+            box-shadow: 0 9px 0 #9b70c6,
                         0 11px 22px rgba(204,153,255,0.5),
                         inset 0 3px 0 rgba(255,255,255,0.6),
                         inset 0 -3px 0 rgba(0,0,0,0.15);
@@ -489,10 +539,10 @@
                         0 4px 10px rgba(204,153,255,0.5);
         }
         .btn-lpurple {
-            background: radial-gradient(circle at 30% 30%, #f0e6ff, #e6ccff, #d9b3ff);
-            color: #333;
-            box-shadow: 0 9px 0 #aa88cc,
-                        0 11px 22px rgba(217,179,255,0.5),
+            background: radial-gradient(circle at 30% 30%, #29d262, #27d63e, #3adf2e);
+            color: #000000;
+            box-shadow: 0 9px 0 #259d45,
+                        0 11px 22px rgba(67, 16, 118, 0.5),
                         inset 0 3px 0 rgba(255,255,255,0.6),
                         inset 0 -3px 0 rgba(0,0,0,0.15);
             font-size: 24px;
@@ -503,7 +553,7 @@
         }
         .btn-blue {
             background: radial-gradient(circle at 30% 30%, #cce6ff, #b3d9ff, #99ccff);
-            color: #333;
+            color: #000000;
             box-shadow: 0 9px 0 #6699cc,
                         0 11px 22px rgba(153,204,255,0.5),
                         inset 0 3px 0 rgba(255,255,255,0.6),
@@ -513,7 +563,24 @@
             box-shadow: 0 2px 0 #6699cc,
                         0 4px 10px rgba(153,204,255,0.5);
         }
-        .btn-home {
+
+
+.btn-home {
+            background: radial-gradient(circle at 30% 30%, #ffb380, #ff9966, #ff7733);
+            color: #000000;
+            box-shadow: 0 9px 0 #cc5522,
+                        0 11px 22px rgba(255,119,51,0.6),
+                        inset 0 3px 0 rgba(255,255,255,0.5),
+                        inset 0 -3px 0 rgba(0,0,0,0.2);
+            font-size: 12px;
+            line-height: 1.1;
+        }
+        .btn-orange:active {
+            box-shadow: 0 2px 0 #cc5522,
+                        0 4px 10px rgba(255,119,51,0.6);
+        }
+
+        /* .btn-home {
             background: radial-gradient(circle at 30% 30%, #cce6ff, #b3d9ff, #99ccff);
             color: #333;
             box-shadow: 0 9px 0 #6699cc,
@@ -525,7 +592,7 @@
         .btn-home:active {
             box-shadow: 0 2px 0 #6699cc,
                         0 4px 10px rgba(153,204,255,0.5);
-        }
+        } */
         @media (max-width: 480px) {
             .start-screen, .calculator { padding: 22px 18px; max-width: 370px; }
             .buttons { gap: 9px; }
