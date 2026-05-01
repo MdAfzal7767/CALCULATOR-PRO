@@ -17,6 +17,103 @@
             padding: 20px;
             font-family: 'Segoe UI', Arial, sans-serif;
         }
+
+
+
+.creator-box.button {
+        background: linear-gradient(145deg, #4facfe, #00f2fe);
+        border-radius: 50px;
+        padding: 16px 40px;
+        box-shadow: 0 12px 0 #61b2f8,
+                    0 15px 30px rgba(79,172,254,0.6),
+                    inset 0 3px 0 rgba(255,255,255,0.5);
+        border: 3px solid rgba(255,255,255,0.3);
+        cursor: pointer;
+        transition: all 0.2s;
+        display: inline-block;
+    }
+    
+    .creator-box.button:active {
+        transform: translateY(12px);
+        box-shadow: 0 0 0 #2d8fe8;
+    }
+    
+    .creator {
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        font-family: 'Rajdhani', sans-serif;
+        user-select: none;
+    }
+    
+    /* ✨ Bio Popup Style */
+    .bio-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        backdrop-filter: blur(10px);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+    
+    .bio-content {
+        background: linear-gradient(145deg, #0e7395, #d0e8f0);
+        padding: 40px;
+        border-radius: 25px;
+        border: 2px solid rgba(79,172,254,0.5);
+        box-shadow: 0 0 50px rgba(79,172,254,0.4);
+        max-width: 450px;
+        text-align: center;
+        animation: popIn 0.4s ease-out;
+    }
+    
+    @keyframes popIn {
+        from { transform: scale(0.5); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+    
+    .bio-title {
+        font-size: 28px;
+        color: #4376ed;
+        font-weight: 900;
+        margin-bottom: 20px;
+        text-shadow: 0 0 20px rgba(0,242,254,0.8);
+    }
+    
+    .bio-line {
+        font-size: 16px;
+        color: #000000;
+        margin: 12px 0;
+        line-height: 1.6;
+    }
+    
+    .close-btn {
+        margin-top: 25px;
+        background: linear-gradient(145deg, #4facfe, #00f2fe);
+        color: #fff;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 20px;
+        font-weight: 900;
+        cursor: pointer;
+        box-shadow: 0 6px 0 #2d8fe8;
+    }
+    
+    .close-btn:active {
+        transform: translateY(6px);
+        box-shadow: 0 0 0 #2d8fe8;
+    }
+
+
+        
 /* .btn-plus2 {
     background: radial-gradient(circle at 30% 30%, #c9ceca, #c9ceca, #c9ceca);
     color: black;
@@ -199,18 +296,18 @@
 /* ✅ CREATED BY - 3D BOX ME - THODA NICHE */
 /* ✅ CREATED BY MD AFZAL - WHITE BOX + HILNE WALA */
 .creator-box {
-    background: linear-gradient(145deg, #2e5e9c, #1e5091);
+    background: linear-gradient(145deg, #5096f2, #2b65b1);
     border-radius: 25px;
     padding: 12px 35px;
     margin-bottom: 30px;
     margin-top: 5px;
-    box-shadow: 0 6px 0 #000000,
+    box-shadow: 0 6px 0 #5192e8,
                 0 8px 20px rgba(0,0,0,0.15),
                 inset 0 2px 0 rgba(255,255,255,1),
                 inset 0 -2px 0 rgba(0,0,0,0.05);
-    border: 2px solid #060101;
+    border: 2px solid #8faff3;
     display: inline-block;
-    animation: shake 3s ease-in-out infinite; /* ← YE LINE ADD KI */
+    /* animation: shake 3s ease-in-out infinite; ← YE LINE ADD KI */
 }
 
 .creator {
