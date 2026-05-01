@@ -1,4 +1,4 @@
-  let display = document.getElementById('display');
+ let display = document.getElementById('display');
         let calculator = document.getElementById('calculator');
         let startScreen = document.getElementById('startScreen');
         let modal = document.getElementById('modal');
@@ -20,7 +20,57 @@
             current = '0';
             updateDisplay();
         }
+ // ✨ MD AFZAL ke liye Khoobsurat Lines
+    const afzalBio = [
+        // "💻 Code with Passion | Dream with Vision",
+        // "🚀 Turning Ideas into Digital Reality",
+        // "⚡ Full Stack Developer from Semapur, Bihar",
+        // "🎯 Mission: Build Apps that Solve Real Problems",
+        // "💎 Specialized in 3D UI & Modern Web Design",
+        // "🔥 Motto: Dream Big, Code Smart, Create Impact",
+        // "🌟 Innovation is My Passion, Excellence is My Goal"
 
+    "💻 Coding with Passion, Building with Purpose",
+    "🚀 Turning Innovative Ideas into Powerful Digital Reality",
+    "⚡ Creative Full Stack Developer from patna, Bihar",
+    "🎯 Mission: To Build Modern Apps that Solve Real-Life Problems",
+   " 💎 Skilled in 3D UI Design, Web Development & Smart Technology",
+   " 🔥 Motto: Think Big, Code Smart, Inspire the World",
+   " 🌟 Passion for Innovation | Commitment to Excellence",
+   " 🚀 Designing Tomorrow with Today’s Technology",
+   " ✨ Success Begins with Vision and Hard Work",
+    "Version: 1.0",
+    "Created by: MD AFZAL",
+    ];
+    
+    function showAfzalBio() {
+        const modal = document.getElementById('bioModal');
+        const bioContainer = document.getElementById('bioLines');
+        
+        // Sabhi lines add karo
+        bioContainer.innerHTML = '';
+        afzalBio.forEach(line => {
+            const p = document.createElement('div');
+            p.className = 'bio-line';
+            p.textContent = line;
+            bioContainer.appendChild(p);
+        });
+        
+        modal.style.display = 'flex';
+        
+        // Console me bhi print karo
+        console.log('%c👨‍💻 MD AFZAL - DEVELOPER BIO', 'color: #00f2fe; font-size: 16px; font-weight: bold;');
+        afzalBio.forEach(line => console.log('%c' + line, 'color: #4facfe; font-size: 14px;'));
+    }
+    
+    function closeBio() {
+        document.getElementById('bioModal').style.display = 'none';
+    }
+    
+    // Modal ke bahar click karne pe close
+    document.getElementById('bioModal').addEventListener('click', function(e) {
+        if (e.target === this) closeBio();
+    });
         // 📋 SHOW MODAL
         function showModal(type) {
             const header = document.getElementById('modalHeader');
