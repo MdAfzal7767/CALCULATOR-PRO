@@ -15,10 +15,28 @@
         <button class="start-btn" onclick="startCalculator()">START</button>
         
         <!-- ✅ CREATED BY 3D BOX ME -->
-        <div class="creator-box">
+        <!-- <div class="creator-box">
             <div class="creator">Created by:- MD AFZAL</div>
-        </div>
+        </div> -->
         
+        
+<!-- ✅ CREATED BY 3D BOX ME -->
+<div class="creator-box button" onclick="showAfzalBio()">
+    <div class="creator">Created by:- MD AFZAL</div>
+</div>
+
+
+<!-- Bio Modal -->
+<div class="bio-modal" id="bioModal">
+    <div class="bio-content">
+        <div class="bio-title">👨‍💻 MD AFZAL</div>
+        <div id="bioLines"></div>
+        <button class="close-btn" onclick="closeBio()">CLOSE</button>
+    </div>
+</div>
+
+
+
         <!-- 📋 MENU BOX -->
         <div class="menu-box">
             <div class="menu-grid">
@@ -71,16 +89,16 @@
             <button class="btn-yellow" onclick="append('7')">7</button>
             <button class="btn-yellow" onclick="append('8')">8</button>
             <button class="btn-yellow" onclick="append('9')">9</button>
-            <button class="btn-plus1" onclick="append('/')">÷</button>
-            <button class="btn-plus1" onclick="append('4')">x</button>
+            <button class="btn-plus1" onclick="append('÷')">÷</button>
+            <button class="btn-plus1" onclick="append('*')">x</button>
             
             
             <!-- Row 5: 5, 6, ×, +, 1 -->
+            <button class="btn-green" onclick="append('4')">4</button>
             <button class="btn-green" onclick="append('5')">5</button>
             <button class="btn-green" onclick="append('6')">6</button>
-            <button class="btn-green" onclick="append('*')">4</button>
             <button class="btn-plus" onclick="append('+')">+</button>
-            <button class="btn-lpurple" onclick="append('-')">%</button>
+            <button class="btn-lpurple" onclick="append('%')">%</button>
             <!-- <button class="btn-purple" onclick="append('1')">-</button> -->
             
             <!-- Row 6: 2, 3, −, =, 0 -->
@@ -94,9 +112,9 @@
             
             <!-- Row 7: ., 00, 000, %, ← HOME -->
             <button class="btn-blue" onclick="append('0')">00</button>
-            <button class="btn-blue" onclick="append('00')">0</button>
+            <button class="btn-blue" onclick="append('0')">0</button>
             <button class="btn-blue" onclick="append('000')">000</button>
-             <button class="btn-pink" onclick="append('0')">.</button>
+             <button class="btn-pink" onclick="append('.')">.</button>
             <!-- <button class="btn-blue" onclick="percent()">%</button> -->
             <button class="btn-home" onclick="goHome()">GO TO HOME</button>
         </div>
